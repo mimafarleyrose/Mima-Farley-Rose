@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.25s linear;
+}
+
+.theme-toggle {
+  height: 25%;
+  width: auto;
+}
+.icon {
+  width: 20px;
+  padding-bottom: 3px;
+}
+
+.theme-toggle {
+  background-color: #000000 !important;
+}
+.title {
+  font-size: 25px;
+  width: 480px;
+  margin: 20px;
+  transition: all 0.5s linear;
+}
+.image {
+  width: 150px;
+  border-radius: 150px;
+  border: 2px solid black;
+}
