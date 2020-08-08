@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { WebsiteHeader } from "./components/header";
-import { BodySection } from "./components/body";
-// import { Route, BrowserRouter as Router } from "react-router-dom";
+import { BodySection } from "./components/pages/body-section";
+import {ExperienceCard} from './components/pages/experience';
+import { NavigationBar } from "./components/bio";
+
 
 function App() {
   const [lightBackground, setLightBackground] = useState(true);
+  const [selectedPage, setSelectedPage] = useState('about');
+
   const toggleBackgroundColor = () => {
     setLightBackground(!lightBackground);
   };
@@ -16,13 +20,15 @@ function App() {
       : (document.body.className = "light-theme");
   }, [lightBackground]);
 
+
   return (
     <div className={"container"}>
       <WebsiteHeader
         propsOnClick={() => toggleBackgroundColor()}
         lightTheme={lightBackground}
       />
-      <BodySection />
+       <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName); console.log(pageName)}}/>
+        <BodySection page={selectedPage} />
     </div>
   );
 }

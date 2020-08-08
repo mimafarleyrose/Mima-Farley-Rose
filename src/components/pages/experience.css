@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Tenor+Sans&display=swap');
+
+
+.experience-card{
+    display:flex;
+    flex-direction:column;
+    font-family: 'Tenor Sans', sans-serif;
+background-color:#a01e66;
+    border-radius:15px;
+    margin-bottom:10px;
+    padding:10px;
+}
+.experience-header{
+    display:flex;
+    flex-direction:row;
+}
+
+.experience-title{
+    font-size: 18px;
+    margin-right:10px;
+}
+
+.experience-skills{
+    display:flex;
+    flex-direction:row;
+}
+
+.experience-description{
+   text-align:left;
+}

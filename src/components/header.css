@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  transition: all 0.25s linear;
+  transition: all 0.05s linear;
+  font-family: 'Aclonica', sans-serif;
+  height: 100px;
 }
 
 .theme-toggle {
@@ -19,12 +23,14 @@
 }
 .title {
   font-size: 25px;
-  width: 480px;
-  margin: 20px;
-  transition: all 0.5s linear;
+  width: 540px;
+  margin: 10px;
+  transition: all 0.05s linear;
 }
 .image {
   width: 150px;
+  margin-top:30px;
   border-radius: 150px;
   border: 2px solid black;
 }
+

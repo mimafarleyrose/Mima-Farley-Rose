@@ -1,33 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React,{useEffect,useState} from "react";
+import './body.css'
 
-const AboutMeText = ({ textToType, delay }) => {
-  const [text, setText] = useState("");
-  useEffect(() => {
-    setTimeout(() => {
-      setText(textToType);
-    }, delay);
-  });
-  return <div>{text}</div>;
-};
 
-export const AboutMe = () => {
+export const NavigationBar = (props) => {
+const [className, setClassName]=useState()
+
+    useEffect(()=>{
+        const theme = (props.theme === true) ? 'light':'dark';
+    setClassName(`navigation-button__${theme}`)
+    },[props]);
+
   return (
-    <div className={"navigation"}>
-      <div className={"circle-wrapper"}>
-        <li className={"navigation-links"}>About</li>
-      </div>
-      <div className={"circle-wrapper"}>
-        <li className={"navigation-links"}>Experience</li>
-      </div>
-      <div className={"circle-wrapper"}>
-        <li className={"navigation-links"}>Work</li>
-      </div>
-      <div className={"circle-wrapper"}>
-        <li className={"navigation-links"}>Contact</li>
-      </div>
-      <div className={"circle-wrapper"}>
-        <li className={"navigation-links"}>CV</li>
-      </div>
+  <div   className={'navigation'}>
+        <button className={className} onClick={()=>props.onClick('about')}>About</button>
+          <button className={className} onClick={()=>props.onClick('experience')} >Experience</button>
+          <button className={className} onClick={()=>props.onClick('work')}>Work</button>
+          <button className={className} onClick={()=>props.onClick('contact')}>Contact</button>
+          <button className={className} onClick={()=>props.onClick('cv')}>CV</button>
     </div>
   );
 };
