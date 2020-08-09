@@ -12,11 +12,12 @@ const [className, setClassName]=useState()
 
   return (
   <div   className={'navigation'}>
-        <button className={className} onClick={()=>props.onClick('about')}>About</button>
-          <button className={className} onClick={()=>props.onClick('experience')} >Experience</button>
-          <button className={className} onClick={()=>props.onClick('work')}>Work</button>
-          <button className={className} onClick={()=>props.onClick('contact')}>Contact</button>
-          <button className={className} onClick={()=>props.onClick('cv')}>CV</button>
-    </div>
+      <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('about')}>About</button></a>
+          <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('experience')} >Experience</button></a>
+          <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('work')}>Work</button></a>
+          <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('cv')}>CV</button></a>
+      <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('contact')}>Contact</button></a>
+
+  </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import { Badge } from 'antd';
 import './experience.css';
 import {AboutSection} from '../sections/about-section'
 import {ContactSection} from '../sections/contact-section'
@@ -12,8 +11,8 @@ export const BodySection = (props) => {
 return (
     <div className={'page-section'}>
         {props.page === 'work' && <WorkSection/>}
-        {props.page === 'about' && <AboutSection/>}
-        {props.page === 'experience' && <ExperienceSection/>}
+        {props.page === 'about' && <AboutSection />}
+        {props.page === 'experience' && <ExperienceSection theme={props.theme}/>}
         {props.page === 'cv' && <CvSection/>}
         {props.page === 'contact' && <ContactSection/>}
     </div>)

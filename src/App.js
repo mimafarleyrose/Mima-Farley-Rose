@@ -28,7 +28,7 @@ function App() {
         lightTheme={lightBackground}
       />
        <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName); console.log(pageName)}}/>
-        <BodySection page={selectedPage} />
+        <BodySection page={selectedPage} theme={lightBackground} />
     </div>
   );
 }
