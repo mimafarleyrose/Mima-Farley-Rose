@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import { WebsiteHeader } from "./components/header";
 import { BodySection } from "./components/pages/body-section";
-import {ExperienceCard} from './components/pages/experience';
 import { NavigationBar } from "./components/bio";
+import { FooterSection } from "./components/sections/footer";
 
 
 function App() {
@@ -29,6 +29,7 @@ function App() {
       />
        <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName); console.log(pageName)}}/>
         <BodySection page={selectedPage} theme={lightBackground} />
+        <FooterSection theme={lightBackground} />
     </div>
   );
 }

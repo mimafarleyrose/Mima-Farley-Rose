@@ -3,8 +3,103 @@
 
 .about-me-section{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     align-items: flex-start;
     font-family: 'Tenor Sans', sans-serif;
 font-size:22px;
+}
+
+.about-me-photo__light{
+    width:200px;
+    border-radius:150px;
+    border:2px solid black;
+}
+.about-me-photo__dark{
+    width:200px;
+    border-radius:150px;
+    border:2px solid white;
+}
+
+
+.about-me-text{
+    padding-left:20px;
+    font-size:18px;
+
+}
+.work-section{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+}
+.work-examples{
+    width: 50%;
+    padding: 20px
+}
+
+.footer-section__dark{
+    position:fixed;
+    bottom:0px;
+    display:flex;
+    flex-direction:row;
+    color:white;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.footer-section__light{
+    position:fixed;
+    bottom:0px;
+    display:flex;
+    color:black;
+    flex-direction:row;
+    width: 50%;
+    justify-content: flex-start;
+}
+
+.get-in-touch__dark{
+    padding-right:30px;
+}
+.get-in-touch__light{
+    padding-right:30px;
+}
+
+
+
+.email-me__light{
+    cursor:pointer;
+    padding-right:30px;
+}
+.email-me__light:hover{
+    cursor:pointer;
+    padding-right:30px;
+    font-weight:bold;
+}
+
+
+.get-in-touch-link__light{
+    color:black;
+}
+.get-in-touch-link__light:hover{
+    font-weight:bold;
+    color:black;
+}
+
+.email-me__dark{
+    cursor:pointer;
+    padding-right:30px;
+}
+.email-me__dark:hover{
+    cursor:pointer;
+    padding-right:30px;
+    font-weight:bold;
+}
+
+
+.get-in-touch-link__dark{
+    color:white;
+}
+.get-in-touch-link__dark:hover{
+    font-weight:bold;
+    color:white;
+
 }

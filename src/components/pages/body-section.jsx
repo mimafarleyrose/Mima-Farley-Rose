@@ -11,10 +11,10 @@ export const BodySection = (props) => {
 return (
     <div className={'page-section'}>
         {props.page === 'work' && <WorkSection/>}
-        {props.page === 'about' && <AboutSection />}
+        {props.page === 'about' && <AboutSection theme={props.theme}/>}
         {props.page === 'experience' && <ExperienceSection theme={props.theme}/>}
         {props.page === 'cv' && <CvSection/>}
-        {props.page === 'contact' && <ContactSection/>}
+        {/*{props.page === 'contact' && <ContactSection/>}*/}
     </div>)
 
 }
