@@ -9,6 +9,6 @@ export const CvSection = (props) => {
 
     return (
         <div className = "cv-section">
-            <a href = {CV} target = "_blank"> <Button type="primary" rel="noopener noreferrer" shape="circle" icon={<DownloadOutlined />} className={`download-cv__${props.theme?'light':'dark'}`} >CV</Button></a>
+            <a href = {CV} target = "_blank" rel="noopener noreferrer"> <Button type="primary" shape="circle" icon={<DownloadOutlined />} className={`download-cv__${props.theme?'light':'dark'}`} >CV</Button></a>
         </div>    );
 };
