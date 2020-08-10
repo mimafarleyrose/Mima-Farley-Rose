@@ -10,9 +10,9 @@ export const ExperienceSection = (props) => {
     return (
         <>
              <ExperienceCard title={'Boclips'}
-                             role={'Software Engineering Intern'}
+                             role={'Software Engineer'}
                           experienceLength={'6 months'}
-                          skills={['Javascript', 'Typescript','React','Kotlin','Testing']}
+                          skills={['Internship','Javascript', 'Typescript','React','Kotlin','Testing']}
                           description={boclipsJobDescription}
                           theme={props.theme}
                              href={'https://www.boclips.com/'}

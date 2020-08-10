@@ -21,7 +21,7 @@ const TypingComponent = ({ textToType, delay, loop }) => {
 };
 
 export const WebsiteHeader = (props) => {
-    const title = "Mima Farley Rose - Software Developer";
+    const title = "Jemima Farley-Rose : Software Developer";
 
     return (
         <div className={"header"}>

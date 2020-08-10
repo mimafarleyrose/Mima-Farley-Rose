@@ -28,18 +28,26 @@ body {
 .container {
   width: 55%;
 }
+@media only screen and (max-width: 1050px) {
+  .container {
+    width: 90%;
+  }
+}
+
 .about-me-text {
   transition: all 0.1s linear;
 }
 .title {
   margin-left: 25px;
-    font-family: 'Aclonica', sans-serif;}
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+}
 
 .navigation {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  font-family: 'Tenor Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin:30px 0;
 }
 

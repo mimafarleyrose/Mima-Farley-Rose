@@ -15,7 +15,6 @@ const [className, setClassName]=useState()
       <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('about')}>About</button></a>
           <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('experience')} >Experience</button></a>
           <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('work')}>Work</button></a>
-          <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('cv')}>CV</button></a>
   </div>
   );
 };

@@ -10,7 +10,8 @@ export const FooterSection = (props) => {
         <div className={`footer-section__${props.theme?'light':'dark'}`}>
 <div className={`get-in-touch__${props.theme?'light':'dark'}`}><a className={`get-in-touch-link__${props.theme?'light':'dark'}`}>{'Github'}</a></div>
 <div className={`get-in-touch__${props.theme?'light':'dark'}`}><a className={`get-in-touch-link__${props.theme?'light':'dark'}`}>{'Linkedin'}</a></div>
-            <div className={`email-me__${props.theme?'light':'dark'}`} onClick={()=>setShowEmail(!showEmail)}>{showEmail?'mimafarleyrose1997@gmail.com':'Email'}</div>
+<div className={`get-in-touch__${props.theme?'light':'dark'}`}><a className={`get-in-touch-link__${props.theme?'light':'dark'}`}>{'Medium'}</a></div>
+            <div className={`email-me__${props.theme?'light':'dark'}`} onClick={()=>setShowEmail(!showEmail)}>{showEmail?'Mimafarleyrose1997@gmail.com':'Email'}</div>
         </div>
     );
 };
