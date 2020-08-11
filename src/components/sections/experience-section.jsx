@@ -8,7 +8,7 @@ const codeFirstGirlsDescription = 'I have been working on a video interactivity 
 export const ExperienceSection = (props) => {
 
     return (
-        <>
+        <div className={'experience-section'}>
              <ExperienceCard title={'Boclips'}
                              role={'Software Engineer'}
                           experienceLength={'6 months'}
@@ -26,6 +26,6 @@ export const ExperienceSection = (props) => {
                         href={'https://codefirstgirls.org.uk/'}
 
         />
-        </>
+        </div>
     );
 };

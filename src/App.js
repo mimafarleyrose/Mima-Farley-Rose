@@ -8,7 +8,7 @@ import { FooterSection } from "./components/sections/footer";
 
 function App() {
   const [lightBackground, setLightBackground] = useState(true);
-  const [selectedPage, setSelectedPage] = useState('about');
+  const [selectedPage, setSelectedPage] = useState('');
 
   const toggleBackgroundColor = () => {
     setLightBackground(!lightBackground);
@@ -23,11 +23,13 @@ function App() {
 
   return (
     <div className={"container"}>
-      <WebsiteHeader
-        propsOnClick={() => toggleBackgroundColor()}
+      <div className={"home-page"} >
+        <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName); console.log(pageName)}} propsOnClick={() => toggleBackgroundColor()}/>
+        <WebsiteHeader
+
         lightTheme={lightBackground}
       />
-       <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName); console.log(pageName)}}/>
+      </div>
         <BodySection page={selectedPage} theme={lightBackground} />
         <FooterSection theme={lightBackground} />
     </div>

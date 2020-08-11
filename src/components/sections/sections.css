@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Source+Code+Pro&display=swap');
 
+.about-me-section, .work-section, .experience-section{
+    height:1000px;
+}
 .about-me-section{
     display:flex;
     flex-direction:column;
@@ -38,26 +42,23 @@
     padding: 20px
 }
 
-.footer-section__dark{
+.footer-section__dark,.footer-section__light {
     margin-bottom:10px;
+    margin-left:50px;
     position:fixed;
     bottom:0px;
     display:flex;
     flex-direction:row;
-    color:white;
     width: 50%;
     justify-content: flex-start;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .footer-section__light{
-    margin-bottom:10px;
-    position:fixed;
-    bottom:0px;
-    display:flex;
-    color:black;
-    flex-direction:row;
-    width: 50%;
-    justify-content: flex-start;
+    color:black
+}
+.footer-section__dark{
+    color:white;
 }
 
 .get-in-touch__dark{
@@ -121,8 +122,7 @@
     color:black;
     border:none;
     height: 50px;
-    font-sixe:18px;
-    border-radius: 10px;
+    font-size:18px;
 }
 
 .download-cv__light:focus,.download-cv__light:hover, .download-cv__light:active{

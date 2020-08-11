@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Tenor+Sans&display=swap');
-:root {
-  --light-bg-color: #ffbbb0;
-  --dark-bg-color:  #212932;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Source+Code+Pro&display=swap');
 
+:root {
+  --light-bg-color: #e1b935;
+  --dark-bg-color:  #212932;
 }
 
 .about-me {
@@ -32,6 +33,7 @@ body {
 .container {
   width: 55%;
 }
+
 @media only screen and (max-width: 1050px) {
   .container {
     width: 90%;
@@ -41,18 +43,59 @@ body {
 .about-me-text {
   transition: all 0.1s linear;
 }
-.title {
+
+.title, .header-hi, .header-name,.header-description  {
   margin-left: 25px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: left;
+  color:white;
+
+}
+.header-description{
+  transition: all 0.05s linear;
+  font-family: 'Source Code Pro', monospace;
+width:380px;
+  font-size: 18px;
 }
 
-.navigation {
+.title{
+  font-size: 108px;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.header-hi{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 18px;
+}
+.header-name{
+  font-size: 45px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.navigation__light, .navigation__dark {
+  top:0px;
   display: flex;
   list-style: none;
-  justify-content: space-between;
-  font-family: 'Lato', sans-serif;
-  margin:30px 0;
+  justify-content: flex-end;
+  margin:0px 30px;
+  padding-top:40px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation__light{
+  background-color:var(--light-bg-color);
+}
+
+.navigation__dark{
+  background-color:var(--dark-bg-color);
+}
+
+
+.navigation:first-child{
+  padding-left:0px;
 }
 
 .navigation-button__light{
@@ -68,7 +111,7 @@ body {
 
 
 .navigation-button__dark{
-  background-color:var(--light-bg-color);
+  background-color:var(--dark-bg-color);
   border: none;
   font-weight: 900;
   outline: none;

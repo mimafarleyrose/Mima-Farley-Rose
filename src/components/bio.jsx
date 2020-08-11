@@ -1,5 +1,8 @@
 import React,{useEffect,useState} from "react";
 import './body.css'
+import {BackgroundButton} from "./backgroundButton";
+import {CvSection} from "./sections/cv-section";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 export const NavigationBar = (props) => {
@@ -11,10 +14,17 @@ const [className, setClassName]=useState()
     },[props]);
 
   return (
-  <div   className={'navigation'}>
-      <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('about')}>About</button></a>
-          <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('experience')} >Experience</button></a>
-          <a className={`navigation-underline__${props.theme?'light':'dark'}`}><button className={className} onClick={()=>props.onClick('work')}>Work</button></a>
+  <div   className={`navigation__${props.theme?'light':'dark'}`}>
+      <Link className={`navigation-underline__${props.theme?'light':'dark'}`} to={"about-section"}><button className={className} >About</button></Link>
+          <Link className={`navigation-underline__${props.theme?'light':'dark'}`} to={"experience-section"}><button className={className} >Experience</button></Link>
+          <Link className={`navigation-underline__${props.theme?'light':'dark'}`} to={"work-section"}><button className={className} >Work</button></Link>
+      <CvSection theme={props.theme}/>
+      <BackgroundButton
+          propsOnClick={() => props.propsOnClick()}
+          lightTheme={props.lightTheme}
+          className={"theme-toggle"}
+      />
   </div>
+
   );
 };
