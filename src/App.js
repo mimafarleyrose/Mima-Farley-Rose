@@ -24,7 +24,7 @@ function App() {
   return (
     <div className={"container"}>
       <div className={"home-page"} >
-        <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName); console.log(pageName)}} propsOnClick={() => toggleBackgroundColor()}/>
+        <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName)}} propsOnClick={() => toggleBackgroundColor()}/>
         <WebsiteHeader
         lightTheme={lightBackground}
       />
