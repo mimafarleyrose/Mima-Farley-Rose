@@ -12,8 +12,12 @@ export const AboutSection = (props) => {
             <div className={'about-section'}>
                 <div className={`about-me-title`}>About Me</div>
                 <div id={"about-photo"}>
-            <a href={'https://www.linkedin.com/in/mima-farley-rose-878351161/'} target={'_blank'}>
-                <img src={Photo} alt={'photo of me'} className={`about-me-photo__${props.theme?'light':'dark'}`}/>
+            <a
+                href={'https://www.linkedin.com/in/mima-farley-rose-878351161/'}
+                target={'_blank'}
+                rel="noopener noreferrer"
+            >
+                <img src={Photo} alt={'jemima farley-rose'} className={`about-me-photo__${props.theme?'light':'dark'}`}/>
             </a>
             </div>
             <div className={'about-me-description'}>
