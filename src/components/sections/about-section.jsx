@@ -6,9 +6,9 @@ const aboutMeText ='I am a software engineer based in London. I have worked on a
     'variety of different projects in my current role encompassing front-end and back-end skills.'+
     ' My passion is coding and I love learning about new technologies and better ways of working.'
 
-const educationText = 'After studying Politics at Queen Mary University of London, I worked in several different software companies,' +
+const educationText = 'After studying Politics at Queen Mary University of London, I worked in several different software companies.' +
     ' I found myself drawn to the work of the engineering teams, this prompted me to start a coding course in web-development with ' +
-    'Code First Girls that taught me the basics of front-end engineering, I then spend 6 months practising and working on personal ' +
+    'Code First Girls that taught me the basics of front-end engineering. I then spend 6 months practising and working on personal ' +
     'projects in my free time in order to hone my skills with more advanced technologies. In March 2020 I began an Internship with ' +
     'Boclips, an Ed-tech company in their engineering team, during this I have been lucky enough to be exposed to many different ' +
     'technologies and projects which has widened my understanding and increased my confidence working in a engineering team and ' +
