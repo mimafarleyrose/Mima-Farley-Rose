@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import { WebsiteHeader } from "./components/header";
 import { BodySection } from "./components/pages/body-section";
-import { NavigationBar } from "./components/bio";
+import { NavigationBar } from "./components/navigation-bar";
 import { FooterSection } from "./components/sections/footer";
 
 
 function App() {
-  const [lightBackground, setLightBackground] = useState(true);
+  const [lightBackground, setLightBackground] = useState(false);
   const [selectedPage, setSelectedPage] = useState('');
 
   const toggleBackgroundColor = () => {
@@ -26,7 +26,6 @@ function App() {
       <div className={"home-page"} >
         <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName); console.log(pageName)}} propsOnClick={() => toggleBackgroundColor()}/>
         <WebsiteHeader
-
         lightTheme={lightBackground}
       />
       </div>

@@ -31,7 +31,7 @@ body {
   margin: 0 0;
 }
 .container {
-  width: 55%;
+  width: 95%;
 }
 
 @media only screen and (max-width: 1050px) {
@@ -43,8 +43,13 @@ body {
 .about-me-text {
   transition: all 0.1s linear;
 }
+.about-me-title{
+  color:white;
+  font-size:30px;
+  font-weight:bold;
+}
 
-.title, .header-hi, .header-name,.header-description  {
+.title, .title-two, .header-hi, .header-name,.header-description  {
   margin-left: 25px;
   font-family: 'Open Sans', sans-serif;
   text-align: left;
@@ -54,14 +59,25 @@ body {
 .header-description{
   transition: all 0.05s linear;
   font-family: 'Source Code Pro', monospace;
-width:380px;
+width:500px;
   font-size: 18px;
+  margin-top:50px
 }
 
 .title{
   font-size: 108px;
   flex-wrap: wrap;
-  width: 400px;
+  width: 1000px;
+  margin-top:40px;
+  line-height:90px;
+}
+
+.title-two{
+  color: #ffeb3a;
+  font-size: 108px;
+  flex-wrap: wrap;
+  line-height:90px;
+
 }
 
 .header-hi{
@@ -69,18 +85,19 @@ width:380px;
   font-size: 18px;
 }
 .header-name{
-  font-size: 45px;
+  font-size: 60px;
   margin-top:20px;
   margin-bottom:20px;
+
 }
 
 .navigation__light, .navigation__dark {
   top:0px;
+  font-family: 'Source Code Pro', monospace;
   display: flex;
   list-style: none;
   justify-content: flex-end;
   margin:0px 30px;
-  padding-top:40px;
   flex-direction: row;
   align-items: center;
 }
@@ -104,7 +121,7 @@ width:380px;
   font-weight: 900;
   outline: none;
   color: #ffeb3a;
-  font-size:22px;
+  font-size:18px;
   transition: all 0.1s linear;
   cursor: pointer;
 }
@@ -117,7 +134,7 @@ width:380px;
   outline: none;
   color:#fee549;
   cursor: pointer;
-  font-size:22px;
+  font-size:18px;
   transition: all 0.1s linear;
 }
 

@@ -11,8 +11,8 @@ export const BackgroundButton = (props) => {
   console.log(props)
   return (
     <Switch
-      unCheckedChildren={<img className={'icon'} src={moon} />}
-      checkedChildren={<img className={'icon'} src={sun} />}
+      unCheckedChildren={<img className={'icon'} src={moon} alt={'moon'}/>}
+      checkedChildren={<img className={'icon'} src={sun} alt={'sun'}/>}
       defaultChecked
       onClick={props.propsOnClick}
       checked={props.lightTheme}

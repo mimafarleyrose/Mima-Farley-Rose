@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Tenor+Sans&display=swap');
 
+:root {
+    --light-bg-color: #e1b935;
+    --dark-bg-color:  #212932;
+    --highlight-color: #ffeb3a;
+}
 
 .experience-card__light{
     display:flex;
     flex-direction:column;
     font-family: 'Tenor Sans', sans-serif;
-background-color:#6ed3f1;
+    background-color:white;
     border-radius:15px;
     margin-bottom:20px;
     padding:15px;
@@ -31,15 +36,10 @@ background-color:#112f44;
     margin-bottom:5px;
 }
 
-.experience-title__dark{
+.experience-title__dark, .experience-title__light {
     font-size: 18px;
     margin-right:10px;
-    color:white;
-}
-.experience-title__light{
-    font-size: 18px;
-    margin-right:10px;
-    color:black;
+    color:var(--highlight-color);
 }
 
 .experience-skills{
@@ -52,17 +52,11 @@ background-color:#112f44;
    text-align:left;
 }
 
-.experience-role__dark{
+.experience-role__dark, .experience-role__light{
     font-size:14px;
-    color:white;
+    color:var(--highlight-color);
     font-style: italic;
 }
-.experience-role__light{
-    font-size:14px;
-    color:black;
-    font-style: italic;
-}
-
 
 .experience-length{
     width: 60px;

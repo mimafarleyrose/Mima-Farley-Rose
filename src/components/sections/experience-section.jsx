@@ -9,6 +9,7 @@ export const ExperienceSection = (props) => {
 
     return (
         <div className={'experience-section'}>
+            <div className={'experience-title'}>{'Places I\'ve worked'}</div>
              <ExperienceCard title={'Boclips'}
                              role={'Software Engineer'}
                           experienceLength={'6 months'}

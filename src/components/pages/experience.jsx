@@ -12,7 +12,10 @@ export const ExperienceCard = (props) => {
                 (<Badge className={'experience-length'} count={props.experienceLength} style={{width: '70px', borderColor:'black',backgroundColor:'black', color:'white'}}/>)
             }
             <div className={'experience-header'}>
-                <a href={props.href} target={'_blank'}><div className={`experience-title__${props.theme?'light':'dark'} `}>{`${props.title} - `}</div></a>
+                <a href={props.href} target={'_blank'} rel="noopener noreferrer">
+                    <div className={`experience-title__${props.theme?'light':'dark'} `}>
+                    {`${props.title} - `}
+                </div></a>
                 <div className={`experience-role__${props.theme?'light':'dark'} `}>{`${props.role}`}</div>
             </div>
             <div className={`experience-body`}>

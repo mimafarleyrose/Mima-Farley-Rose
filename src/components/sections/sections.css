@@ -1,29 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Source+Code+Pro&display=swap');
 
+:root {
+    --light-bg-color: #e1b935;
+    --dark-bg-color:  #212932;
+    --highlight-color: #ffeb3a;
+}
+
 .about-me-section, .work-section, .experience-section{
     height:1000px;
+    margin-left: 130px;
+    margin-right: 130px;
 }
 .about-me-section{
-    display:flex;
-    flex-direction:column;
+    margin-top:100px;
     font-family: 'Lato', sans-serif;
     font-size:22px;
     align-items:center;
 }
-.about-me-photo__light,.about-me-photo__dark {
-    margin:10px
+
+.about-section{
+    border-bottom:2px solid var(--highlight-color);
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+padding-bottom:200px
 }
 
-.about-me-photo__light{
-    width:200px;
-    border-radius:150px;
-    border:2px solid black;
+
+.about-me-photo__light,.about-me-photo__dark {
+    margin:10px;
+    width: 400px;
+    border-radius: 10px;
+    filter: brightness(0.7);
+    transition: all 0.1s linear;
+
 }
-.about-me-photo__dark{
-    width:200px;
-    border-radius:150px;
-    border:2px solid white;
+.about-me-photo__light:hover,.about-me-photo__dark:hover {
+    filter: brightness(0.99);
+    transition: all 0.1s linear;
 }
 
 
@@ -39,7 +54,8 @@
 }
 .work-examples{
     width: 50%;
-    padding: 20px
+    border-radius: 4px;
+    padding: 0px
 }
 
 .footer-section__dark,.footer-section__light {
@@ -49,7 +65,6 @@
     bottom:0px;
     display:flex;
     flex-direction:row;
-    width: 50%;
     justify-content: flex-start;
     font-family: 'Source Code Pro', monospace;
 }
@@ -61,13 +76,9 @@
     color:white;
 }
 
-.get-in-touch__dark{
+.get-in-touch__dark, .get-in-touch__light{
     padding-right:30px;
 }
-.get-in-touch__light{
-    padding-right:30px;
-}
-
 
 
 .email-me__light{
@@ -110,38 +121,66 @@
 }
 
 .cv-section{
-    margin:30px;
+    margin: 30px 60px 30px 30px;
     font-size:18px;
     display:flex;
     flex-direction:row;
 }
 
 .download-cv__light, .download-cv__dark{
-    width:100px;
-    background-color:#ffeb3a;
     color:black;
-    border:none;
-    height: 50px;
-    font-size:18px;
+    width: 100px;
+    color: #ffeb3a;
+    border: 1px solid #ffeb3a;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+.download-cv__light{
+    background-color:var(--light-bg-color);
+}
+
+.download-cv__dark{
+    background-color:var(--dark-bg-color);
 }
 
 .download-cv__light:focus,.download-cv__light:hover, .download-cv__light:active{
-    border-color:black;
-    background-color:#ffeb3a;
-    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.75);
-    color:black;
-    transition: all 0.1s linear;
-}
-.download-cv__light:focus,.download-cv__light:hover{
-    box-shadow: 1px 1px 15px 0px rgba(0,0,0,0.75);
+    background-color:#e2bb02;
+    cursor:pointer;
 }
 
 .download-cv__dark:focus,.download-cv__dark:hover,.download-cv__dark:active {
-    border-color:black;
-    background-color:#ffeb3a;
-    color:black;
-    transition: all 0.1s linear;
+    background-color:#e2bb02;
+    cursor:pointer;
+
 }
 .download-cv__dark:focus,.download-cv__dark:hover{
     box-shadow: 1px 1px 15px 0px rgb(255,255,255);
+}
+
+.about-me-description{
+    width:400px;
+    border:1px solid black;
+    margin-top: 130px;
+}
+
+.about-photo{
+    width:400px;
+    border:1px solid black;
+}
+.experience-title{
+    margin-left: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    color: white;
+    font-size: 40px;
+}
+
+.work-section-title{
+    margin-left: 25px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    color: white;
+    font-size: 40px;
 }
