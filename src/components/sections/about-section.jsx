@@ -1,6 +1,6 @@
 import React from "react";
 import './sections.css'
-import Photo from '../../IMG_4967.jpg'
+import Photo from '../../../public/IMG_4967.jpg'
 
 const aboutMeText ='I am a software engineer based in London. I have worked on a ' +
     'variety of different projects in my current role encompassing front-end and back-end skills.'+

@@ -1,6 +1,6 @@
 import React from "react";
 import './sections.css'
-import CV from './cv.pdf'
+import CV from '../../../public/cv.pdf'
 import { DownloadOutlined } from '@ant-design/icons';
 
 
