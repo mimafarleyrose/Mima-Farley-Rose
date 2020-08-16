@@ -145,13 +145,16 @@ padding-bottom:200px
     background-color:var(--dark-bg-color);
 }
 
-.download-cv__light:focus,.download-cv__light:hover, .download-cv__light:active{
-    background-color:#e2bb02;
+.download-cv__light:focus,
+.download-cv__light:hover,
+.download-cv__light:active,
+.download-cv__dark:focus,
+.download-cv__dark:hover,
+.download-cv__dark:active{
     cursor:pointer;
 }
 
 .download-cv__dark:focus,.download-cv__dark:hover,.download-cv__dark:active {
-    background-color:#e2bb02;
     cursor:pointer;
 
 }
