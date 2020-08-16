@@ -1,13 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import './sections.css'
 import {
     GithubOutlined,
     LinkedinOutlined,
-    MediumOutlined,
+    MailOutlined,
 } from '@ant-design/icons';
 
 export const FooterSection = (props) => {
-
+const [emailVisible, setEmailVisible]=useState(false)
     return (
         <div className={`footer-section__${props.theme?'light':'dark'}`}>
 <div className={`get-in-touch__${props.theme?'light':'dark'}`}>
@@ -28,15 +28,13 @@ export const FooterSection = (props) => {
     >
     <LinkedinOutlined style={{fontSize:25,  color: '#ffeb3a'}} />
 </a></div>
-<div className={`get-in-touch__${props.theme?'light':'dark'}`}>
-    <a
-        className={`get-in-touch-link__${props.theme?'light':'dark'}`}
-        href={'https://www.linkedin.com/in/mima-farley-rose-878351161/'}
-        target={'_blank'}
-        rel={"noopener noreferrer"}
-    >
-    <MediumOutlined style={{fontSize:25, color: '#ffeb3a'}} />
-    </a>
+<div className={`get-in-touch__${props.theme?'light':'dark'}`}>{
+    emailVisible?
+        <div onClick={()=>setEmailVisible(!emailVisible)}>Mimafarleyrose1998@gmail.com</div>:
+        (<div onClick={()=>setEmailVisible(!emailVisible)}>
+            <MailOutlined style={{fontSize:25,  color: '#ffeb3a'}}/>
+        </div>)
+}
 </div>
         </div>
     );
