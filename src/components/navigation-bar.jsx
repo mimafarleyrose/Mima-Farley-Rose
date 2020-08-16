@@ -2,7 +2,7 @@ import React,{useEffect,useState} from "react";
 import './body.css'
 import {BackgroundButton} from "./backgroundButton";
 import {CvSection} from "./sections/cv-section";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 export const NavigationBar = (props) => {
