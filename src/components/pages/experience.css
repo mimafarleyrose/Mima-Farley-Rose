@@ -7,18 +7,11 @@
 }
 
 .experience-card__light{
-    display:flex;
-    flex-direction:column;
-    font-family: 'Tenor Sans', sans-serif;
     background-color:white;
-    border-radius:15px;
-    margin-bottom:20px;
-    padding:15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
-.experience-card__dark{
+.experience-card__dark, .experience-card__light{
     display:flex;
     flex-direction:column;
     font-family: 'Tenor Sans', sans-serif;
@@ -27,8 +20,16 @@ background-color:#112f44;
     margin-bottom:20px;
     padding:15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    width: 50%;
+    margin-left: 25px;
+    margin-top:25px;
 }
+
+.experience-card__dark {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #112f44;
+}
+
 .experience-header{
     display:flex;
     flex-direction:row;
