@@ -6,7 +6,7 @@ import './experience.css';
 export const ExperienceCard = (props) => {
 
 
-    return (
+    return ( props.visible && (
         <div className={`experience-card__${props.theme?'light':'dark'}`}>
             { !props.theme?(<Badge className={'experience-length'} count={props.experienceLength} style={{ width: '70px',backgroundColor:'white', color:'black'}}/>):
                 (<Badge className={'experience-length'} count={props.experienceLength} style={{width: '70px', borderColor:'black',backgroundColor:'black', color:'white'}}/>)
@@ -20,10 +20,15 @@ export const ExperienceCard = (props) => {
             </div>
             <div className={`experience-body`}>
            <SkillsBadges skills={props.skills} theme={props.theme}/>
-           <div className={'experience-description'}>{props.description}</div>
+           <ul className={'experience-description'}>
+               {props.description.map((descriptionPoint) =>{
+                   return(
+                   <li>{descriptionPoint}</li>)
+               })}
+           </ul>
             </div>
         </div>
-    )
+    ))
 }
 
 const SkillsBadges = (props)=>{

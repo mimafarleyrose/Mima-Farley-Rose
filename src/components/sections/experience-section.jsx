@@ -2,8 +2,16 @@ import React from "react";
 import { ExperienceCard } from '../pages/experience'
 import './sections.css'
 
-const boclipsJobDescription = 'I have been working on a video interactivity project that has allowed me to be involved in feature development from  early-stage research to implementation of a prototype. During this project I have had the chance to pair program at times, I have found this really valuable for building my understanding of coding concepts.  I have also worked on some other features which have been pushed out to the product, whilst working on these I learned to use Test Driven Development and I found this a very helpful way to work which has enabled me to write more robust code. The main language I have been programming in is Typescript with React, but I have also worked on projects using Kotlin and plain Javascript.'
-const codeFirstGirlsDescription = 'I have been working on a video interactivity project that has allowed me to be involved in feature development from  early-stage research to implementation of a prototype. During this project I have had the chance to pair program at times, I have found this really valuable for building my understanding of coding concepts.  I have also worked on some other features which have been pushed out to the product, whilst working on these I learned to use Test Driven Development and I found this a very helpful way to work which has enabled me to write more robust code. The main language I have been programming in is Typescript with React, but I have also worked on projects using Kotlin and plain Javascript.'
+const codeFirstGirlsDescription =[
+    'Presenting 2 hour long sessions along with other instructors on basics of web development',
+    'Answering questions from students on slack'
+]
+
+const boclipsJobDescription =[
+    'Working mainly with React, Typescript and Kotlin.',
+    'Using test driven development, testing with Jest, React Testing Library and Enzyme.',
+    'Shipping code regularly on both the frontend and backend.',
+    'Working with Bit components']
 
 export const ExperienceSection = (props) => {
 
@@ -12,18 +20,20 @@ export const ExperienceSection = (props) => {
             <div className={'experience-title'}>{'Places I\'ve worked'}</div>
              <ExperienceCard title={'Boclips'}
                              role={'Software Engineer'}
-                          experienceLength={'6 months'}
-                          skills={['Internship','Javascript', 'Typescript','React','Kotlin','Testing']}
-                          description={boclipsJobDescription}
-                          theme={props.theme}
+                            experienceLength={'6 months'}
+                            skills={['Internship','Javascript', 'Typescript','React','Kotlin','Testing']}
+                            description={boclipsJobDescription}
+                            theme={props.theme}
+                             visible={true}
                              href={'https://www.boclips.com/'}
-
     />
         <ExperienceCard title={'Code First Girls'}
                         role={'Instructor'}
                         skills={['Teaching', 'HTML','CSS', 'Javascript', 'Mentoring']}
                         description={codeFirstGirlsDescription}
                         theme={props.theme}
+                        visible={true}
+
                         href={'https://codefirstgirls.org.uk/'}
 
         />
