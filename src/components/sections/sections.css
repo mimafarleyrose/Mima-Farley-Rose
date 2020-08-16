@@ -16,6 +16,7 @@
 .experience-section{
     display: flex;
     flex-direction: column;
+    align-items:center;
 }
 .about-me-section{
     margin-top:100px;
@@ -53,8 +54,8 @@ padding-bottom:200px
 }
 .work-section{
     display:flex;
-    flex-wrap:wrap;
     flex-direction:column;
+    align-items:center;
 }
 
 .footer-section__dark,.footer-section__light {
@@ -161,10 +162,6 @@ padding-bottom:200px
     box-shadow: 1px 1px 15px 0px rgb(255,255,255);
 }
 
-.about-photo{
-    width:400px;
-    border:1px solid black;
-}
 .experience-title{
     margin-left: 25px;
     font-family: 'Open Sans', sans-serif;
@@ -173,3 +170,6 @@ padding-bottom:200px
     font-size: 40px;
 }
 
+.about-me-description{
+    margin-top:50px;
+}
