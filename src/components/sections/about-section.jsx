@@ -2,8 +2,17 @@ import React from "react";
 import './sections.css'
 import Photo from '../../IMG_4967.jpg'
 
-const aboutMeText = 'I am highly motivated, confident and keen to develop in a technical environment. After working in two fast-growth tech companies, I caught the engineering bug. I taught myself to code through a mixture of online courses, personal projects and a course with Code First Girls  and as a result I have secured an internship in a software engineering team working on video interactivity. This has allowed me to hone my technical skills and gain practical experience of agile development and working in a busy tech team, shipping new features frequently.  I am keen to grow as a developer and so I am looking for  new learning challenges in my next role'
+const aboutMeText ='I am a software engineer based in London. I have worked on a ' +
+    'variety of different projects in my current role encompassing front-end and back-end skills.'+
+    ' My passion is coding and I love learning about new technologies and better ways of working.'
 
+const educationText = 'After studying Politics at Queen Mary University of London, I worked in several different software companies,' +
+    ' I found myself drawn to the work of the engineering teams, this prompted me to start a coding course in web-development with ' +
+    'Code First Girls that taught me the basics of front-end engineering, I then spend 6 months practising and working on personal ' +
+    'projects in my free time in order to hone my skills with more advanced technologies. In March 2020 I began an Internship with ' +
+    'Boclips, an Ed-tech company in their engineering team, during this I have been lucky enough to be exposed to many different ' +
+    'technologies and projects which has widened my understanding and increased my confidence working in a engineering team and ' +
+    'on my own.'
 
 export const AboutSection = (props) => {
 
@@ -22,6 +31,7 @@ export const AboutSection = (props) => {
             </div>
             <div className={'about-me-description'}>
                 <div className={`about-me-text`}>{aboutMeText}</div>
+                <div className={`education-text`}>{educationText}</div>
             </div>
             </div>
         </div>

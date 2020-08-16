@@ -17,10 +17,11 @@
     display: flex;
     flex-direction: column;
     align-items:center;
+    font-family: 'Source Code Pro', monospace;
 }
 .about-me-section{
     margin-top:100px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size:22px;
     align-items:center;
 }
@@ -39,7 +40,6 @@ padding-bottom:200px
     border-radius: 10px;
     filter: brightness(0.7);
     transition: all 0.1s linear;
-
 }
 .about-me-photo__light:hover,.about-me-photo__dark:hover {
     filter: brightness(0.99);
@@ -47,11 +47,16 @@ padding-bottom:200px
 }
 
 
-.about-me-text{
+.about-me-text, .education-text{
     padding-left:20px;
-    font-size:18px;
+    font-size:16px;
+    margin-right:30px;
+    margin-left:30px;
+    padding-bottom: 10px;
+    font-family: 'Source Code Pro', monospace;
 
 }
+
 .work-section{
     display:flex;
     flex-direction:column;
@@ -164,10 +169,11 @@ padding-bottom:200px
 
 .experience-title{
     margin-left: 25px;
-    font-family: 'Open Sans', sans-serif;
     text-align: left;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .about-me-description{

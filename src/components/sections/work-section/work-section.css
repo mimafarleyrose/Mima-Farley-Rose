@@ -12,7 +12,7 @@
 
 }
 
-.project-card{
+.project-card__light, .project-card__dark{
     width: 30%;
     align-self: center;
     margin-top: 100px;
@@ -22,9 +22,27 @@
     font-size: 18px;
 }
 
+.project-card-contents__light{
+    color:black;
+}
+.project-card-contents__dark{
+    color:white;
+}
+.project-card-contents__light:active,
+.project-card-contents__dark:active,
+.project-card-contents__light:hover,
+.project-card-contents__dark:hover
+{
+    color:var(--highlight-color);
+}
+
 .project-title{
     font-size: 28px;
-
+    margin:10px;
+    font-family: 'Source Code Pro', monospace;
+}
+.project-title:hover{
+    text-decoration: underline;
 }
 
 .work-section-title{
@@ -32,6 +50,6 @@
     font-family: 'Open Sans', sans-serif;
     text-align: left;
     color: white;
-    font-size: 40px;
+    font-size: 60px;
     margin-top: 100px;
 }

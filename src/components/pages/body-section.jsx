@@ -10,7 +10,7 @@ return (
     <div className={'page-section'}>
         <AboutSection theme={props.theme}/>
         <ExperienceSection theme={props.theme}/>
-        <WorkSection/>
+        <WorkSection theme={props.theme}/>
     </div>)
 
 }
