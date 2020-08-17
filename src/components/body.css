@@ -48,6 +48,7 @@ body {
   color:white;
   font-size:60px;
   font-weight:bold;
+  margin-top: 30px;
 }
 
 .title, .title-two, .header-hi, .header-name,.header-description  {

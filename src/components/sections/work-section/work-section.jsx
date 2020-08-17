@@ -7,13 +7,13 @@ export const WorkSection = (props) => {
 
     return (
         <div className={'work-section'}>
-            <div className={'work-section-title'}>{'What I\'ve been building'}</div>
+            <div className={'work-section-title'}>{'What I\'ve Been Building Recently...'}</div>
         <WorkSectionCard
             title={'Ravenous'}
             link={'https://sad-joliot-448237.netlify.app/'}
             image={PreviousWork}
-            description={'Web app built with React using the\n' +
-            'google apis'}
+            description={'Web app built with React using ' +
+            'APIs and React Hooks'}
             theme={props.theme}
         />
         </div>
