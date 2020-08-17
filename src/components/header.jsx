@@ -43,8 +43,8 @@ export const WebsiteHeader = () => {
 
     return (
         <div className={"header"}>
-            <div className={"header-hi"} >{'Hi, my name is '}</div>
-            <div className={"header-name"}>{'Jemima Farley-Rose'}</div>
+            <div className={"header-hi"} >{'Hi. My name is '}</div>
+            <div className={"header-name"}>{'Jemima Farley-Rose.'}</div>
             <TypingComponent textToType={title} delay={100} loop={false} />
             <DelayComponent textToType={description} delay={3100} loop={false} />
         </div>
