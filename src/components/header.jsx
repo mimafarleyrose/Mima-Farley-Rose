@@ -39,7 +39,8 @@ const DelayComponent = ({ textToType, delay }) => {
 
 export const WebsiteHeader = () => {
     const title = "I like building things."
-    const description  = "I am a software engineer based in London, I specialise in frontend engineering"
+    const description  = "I\'m a London-based software engineer. I\'m a fast learner and I currently " +
+        "specialise in front-end engineering using React with Typescript."
 
     return (
         <div className={"header"}>
