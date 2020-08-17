@@ -4,7 +4,7 @@ import Photo from '../IMG_4967.jpg'
 
 const aboutMeText ='I\'ve worked on a variety of projects in my current role touching both front-end and back-end technologies. My passion is coding and I love learning about new technologies and better ways of working.'
 
-const educationText = 'After studying Politics at Queen Mary University of London, I worked in several software ' +
+const educationText = 'After studying Political Science at Queen Mary University of London, I worked in several software ' +
     'companies. I found myself drawn to the work of the engineering teams and this prompted me to take a coding' +
     ' course in web development with Code First Girls. I learned the basics of front-end engineering and then' +
     ' spent 6 months honing my skills with more advanced technologies by working on personal projects in my free ' +
