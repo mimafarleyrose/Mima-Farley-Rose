@@ -35,8 +35,10 @@ padding-bottom:200px
 
 
 .about-me-photo__light,.about-me-photo__dark {
-    margin:10px;
-    width: 400px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+    width: 300px;
     border-radius: 10px;
     filter: brightness(0.7);
     transition: all 0.1s linear;
@@ -52,7 +54,7 @@ padding-bottom:200px
     font-size:16px;
     margin-right:30px;
     margin-left:30px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     font-family: 'Source Code Pro', monospace;
 
 }
@@ -179,5 +181,5 @@ padding-bottom:200px
 }
 
 .about-me-description{
-    margin-top:50px;
+    margin-top:30px;
 }
