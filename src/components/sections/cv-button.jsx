@@ -4,7 +4,7 @@ import CV from '../../cv.pdf'
 import { DownloadOutlined } from '@ant-design/icons';
 
 
-export const CvSection = (props) => {
+export const CvButton = (props) => {
 
     return (
         <div className = "cv-section">

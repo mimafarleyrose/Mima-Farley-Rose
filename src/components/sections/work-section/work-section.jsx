@@ -1,5 +1,5 @@
 import React from "react";
-import PreviousWork from '../../pages/previous-work.png';
+import PreviousWork from '../previous-work.png';
 import './work-section.css';
 import '../sections.css';
 

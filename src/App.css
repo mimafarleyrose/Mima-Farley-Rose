@@ -39,3 +39,15 @@
 .home-page{
   height:1000px
 }
+
+@media only screen and (max-width: 414px) {
+  body{
+    width: 414px;
+  }
+  .container {
+    width: 90%;
+  }
+  .header {
+    margin-left:0px;
+  }
+}

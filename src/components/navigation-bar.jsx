@@ -1,7 +1,7 @@
 import React,{useEffect,useState} from "react";
 import './body.css'
 import {BackgroundButton} from "./backgroundButton";
-import {CvSection} from "./sections/cv-section";
+import {CvButton} from "./sections/cv-button";
 import { Link } from "react-scroll";
 
 
@@ -18,7 +18,7 @@ const [className, setClassName]=useState()
       <Link className={`navigation-underline__${props.theme?'light':'dark'}`} to={"about-section"}><button className={className} >About</button></Link>
           <Link className={`navigation-underline__${props.theme?'light':'dark'}`} to={"experience-section"}><button className={className} >Experience</button></Link>
           <Link className={`navigation-underline__${props.theme?'light':'dark'}`} to={"work-section"}><button className={className} >Work</button></Link>
-      <CvSection theme={props.theme}/>
+      <CvButton theme={props.theme}/>
       <BackgroundButton
           propsOnClick={() => props.propsOnClick()}
           lightTheme={props.lightTheme}

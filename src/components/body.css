@@ -34,11 +34,7 @@ body {
   width: 95%;
 }
 
-@media only screen and (max-width: 1050px) {
-  .container {
-    width: 90%;
-  }
-}
+
 
 .about-me-text {
   transition: all 0.1s linear;
@@ -56,8 +52,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: left;
   color:white;
-
 }
+
+
 .header-description{
   transition: all 0.05s linear;
   font-family: 'Source Code Pro', monospace;

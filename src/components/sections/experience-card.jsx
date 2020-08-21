@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from 'antd';
-import './experience.css';
+import './experience-card.css';
 
 
 export const ExperienceCard = (props) => {

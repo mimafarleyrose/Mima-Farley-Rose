@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./header.css";
+import "../../header.css";
+import "../../../App.css";
 
 const TypingComponent = ({ textToType, delay }) => {
     const [text, setText] = useState("");

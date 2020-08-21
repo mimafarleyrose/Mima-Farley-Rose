@@ -1,8 +1,8 @@
 import React from "react";
-import './experience.css';
-import {AboutSection} from '../sections/about-section'
-import {WorkSection} from '../sections/work-section/work-section'
-import {ExperienceSection} from '../sections/experience-section'
+import '../experience-card.css';
+import {AboutSection} from '../about-section/about-section'
+import {WorkSection} from '../work-section/work-section'
+import {ExperienceSection} from '../experience-section/experience-section'
 
 export const BodySection = (props) => {
 

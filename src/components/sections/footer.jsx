@@ -5,6 +5,7 @@ import {
     LinkedinOutlined,
     MailOutlined,
 } from '@ant-design/icons';
+import "../../App.css";
 
 export const FooterSection = (props) => {
 const [emailVisible, setEmailVisible]=useState(false)

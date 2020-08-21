@@ -1,6 +1,6 @@
 import React from "react";
-import './sections.css'
-import Photo from '../IMG_4967.jpg'
+import './about-section.css'
+import Photo from './IMG_4967.jpg'
 
 const aboutMeText ='I\'ve worked on a variety of projects in my current role touching both front-end and back-end technologies. My passion is coding and I love learning about new technologies and better ways of working.'
 

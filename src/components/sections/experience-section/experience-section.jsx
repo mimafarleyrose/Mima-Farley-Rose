@@ -1,6 +1,7 @@
 import React from "react";
-import { ExperienceCard } from '../pages/experience'
-import './sections.css'
+import { ExperienceCard } from '../experience-card'
+import './experience-section.css'
+import '../sections.css'
 
 const codeFirstGirlsDescription =[
     'Presenting 2-hour long sessions with other instructors on the basics of web development',
