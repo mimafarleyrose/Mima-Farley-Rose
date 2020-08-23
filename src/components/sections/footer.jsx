@@ -31,7 +31,7 @@ const [emailVisible, setEmailVisible]=useState(false)
 </a></div>
 <div className={`get-in-touch__${props.theme?'light':'dark'}`}>{
     emailVisible?
-        <div onClick={()=>setEmailVisible(!emailVisible)}>Mimafarleyrose1998@gmail.com</div>:
+        <div onClick={()=>setEmailVisible(!emailVisible)}>jemimafarleyrose@gmail.com</div>:
         (<div onClick={()=>setEmailVisible(!emailVisible)}>
             <MailOutlined style={{fontSize:25,  color: '#ffeb3a'}}/>
         </div>)
