@@ -53,3 +53,10 @@
     font-size: 60px;
     margin-top: 50px;
 }
+
+@media only screen and (max-width: 414px) {
+    .project-card__light, .project-card__dark {
+        width: 95%;
+        margin-left: 0px;
+    }
+}
