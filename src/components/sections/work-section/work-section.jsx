@@ -10,7 +10,7 @@ export const WorkSection = (props) => {
             <div className={'work-section-title'}>{'What I\'ve Been Building Recently...'}</div>
         <WorkSectionCard
             title={'Eat Out'}
-            link={'https://unruffled-curran-fc5edd.netlify.app/'}
+            link={'https://sad-joliot-448237.netlify.app/'}
             image={PreviousWork}
             description={'Web app built with React using ' +
             'APIs and React Hooks'}
