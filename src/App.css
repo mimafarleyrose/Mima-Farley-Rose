@@ -46,6 +46,7 @@
   }
   .container {
     width: 90%;
+    overflow: hidden;
   }
   .header {
     margin-left:0px;

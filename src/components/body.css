@@ -89,106 +89,25 @@ width:500px;
   margin-bottom:20px;
 
 }
+@media only screen and (max-width: 414px) {
 
-.navigation__light, .navigation__dark {
-  top:0px;
-  font-family: 'Source Code Pro', monospace;
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  margin:0px 30px;
-  flex-direction: row;
-  align-items: center;
-}
+  .header-name {
+    font-size: 30px;
+  }
 
-.navigation__light{
-  background-color:var(--light-bg-color);
-}
+  .title {
+    font-size: 45px;
+    margin-top:0px
+  }
 
-.navigation__dark{
-  background-color:var(--dark-bg-color);
-}
+  .title-two {
+    font-size: 45px;
+  }
 
-
-.navigation:first-child{
-  padding-left:0px;
-}
-
-.navigation-button__light{
-  background-color: var(--light-bg-color);
-  border: none;
-  font-weight: 900;
-  outline: none;
-  color: #ffeb3a;
-  font-size:18px;
-  transition: all 0.1s linear;
-  cursor: pointer;
-}
-
-
-.navigation-button__dark{
-  background-color:var(--dark-bg-color);
-  border: none;
-  font-weight: 900;
-  outline: none;
-  color:#fee549;
-  cursor: pointer;
-  font-size:18px;
-  transition: all 0.1s linear;
-}
-
-.navigation-underline__dark {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-}
-
-.navigation-underline__dark:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fee549;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.navigation-underline__dark:hover:after {
-  width: 100%;
-  left: 0;
-}
-
-.navigation-underline__light {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-}
-
-.navigation-underline__light:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #ffeb3a;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.navigation-underline__light:hover:after {
-  width: 100%;
-  left: 0;
+  .header-description{
+    font-size: 14px;
+    margin-top: 0px;
+    width: 95%;
+    height: auto;
+  }
 }

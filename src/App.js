@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import { WebsiteHeader } from "./components/sections/main-section/header";
 import { BodySection } from "./components/sections/main-section/body-section";
-import { NavigationBar } from "./components/navigation-bar";
+import { NavigationBar } from "./components/sections/navigation-bar/navigation-bar";
 import { FooterSection } from "./components/sections/footer";
 
 
