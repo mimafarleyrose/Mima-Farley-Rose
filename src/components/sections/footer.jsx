@@ -23,7 +23,7 @@ const [emailVisible, setEmailVisible]=useState(false)
 <div className={`get-in-touch__${props.theme?'light':'dark'}`}>
     <a
         className={`get-in-touch-link__${props.theme?'light':'dark'}`}
-        href={'https://www.linkedin.com/in/mima-farley-rose-878351161/'}
+        href={'https://www.linkedin.com/in/jemima-farley-rose-878351161/'}
         target={'_blank'}
         rel={"noopener noreferrer"}
     >
