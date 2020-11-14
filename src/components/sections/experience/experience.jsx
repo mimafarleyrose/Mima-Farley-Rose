@@ -1,6 +1,6 @@
 import React from "react";
-import { ExperienceCard } from '../experience-card'
-import './experience-section.css'
+import { ExperienceCard } from './card/experience-card'
+import './experience.css'
 import '../sections.css'
 
 const codeFirstGirlsDescription =[

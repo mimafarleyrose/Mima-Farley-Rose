@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from "react";
 import '../../body.css'
-import {BackgroundButton} from "../../backgroundButton";
+import {BackgroundButton} from "../../toggleLightDark";
 import {CvButton} from "../cv-button";
 import { Link } from "react-scroll";
-import './navigation-bar.css'
+import './navigation.css'
 
 export const NavigationBar = (props) => {
 const [className, setClassName]=useState()

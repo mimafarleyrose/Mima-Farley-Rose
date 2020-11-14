@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import { WebsiteHeader } from "./components/sections/main-section/header";
-import { BodySection } from "./components/sections/main-section/body-section";
-import { NavigationBar } from "./components/sections/navigation-bar/navigation-bar";
+import { WebsiteHeader } from "./components/sections/main/header";
+import { BodySection } from "./components/sections/main/body";
+import { NavigationBar } from "./components/sections/navigation-bar/navigation";
 import { FooterSection } from "./components/sections/footer";
 
 
@@ -25,9 +25,7 @@ function App() {
     <div className={"container"}>
       <div className={"home-page"} >
         <NavigationBar theme={lightBackground} onClick={(pageName)=>{setSelectedPage(pageName)}} propsOnClick={() => toggleBackgroundColor()}/>
-        <WebsiteHeader
-        lightTheme={lightBackground}
-      />
+        <WebsiteHeader/>
       </div>
         <BodySection page={selectedPage} theme={lightBackground} />
         <FooterSection theme={lightBackground} />

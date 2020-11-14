@@ -1,6 +1,6 @@
 import React from "react";
 import PreviousWork from './previous-work.png';
-import './work-section.css';
+import './work.css';
 import '../sections.css';
 
 export const WorkSection = (props) => {
